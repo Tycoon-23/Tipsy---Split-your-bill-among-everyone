@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		48C90FBE28C1D07000D50635 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C90FBD28C1D07000D50635 /* ResultViewController.swift */; };
+		48C90FC328C1F52200D50635 /* AppBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C90FC228C1F52200D50635 /* AppBrain.swift */; };
 		48FFEE7A28C1C769005FA08B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FFEE7928C1C769005FA08B /* AppDelegate.swift */; };
 		48FFEE7C28C1C769005FA08B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FFEE7B28C1C769005FA08B /* SceneDelegate.swift */; };
 		48FFEE7E28C1C769005FA08B /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FFEE7D28C1C769005FA08B /* CalculatorViewController.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		48C90FBD28C1D07000D50635 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		48C90FC228C1F52200D50635 /* AppBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppBrain.swift; path = ../../AppBrain.swift; sourceTree = "<group>"; };
 		48FFEE7628C1C769005FA08B /* Tipsy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tipsy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48FFEE7928C1C769005FA08B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48FFEE7B28C1C769005FA08B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +58,14 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		48C90FC128C1F4E200D50635 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				48C90FC228C1F52200D50635 /* AppBrain.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		48FFEE6D28C1C768005FA08B = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +87,7 @@
 			children = (
 				48FFEE7928C1C769005FA08B /* AppDelegate.swift */,
 				48FFEE7B28C1C769005FA08B /* SceneDelegate.swift */,
+				48C90FC128C1F4E200D50635 /* Model */,
 				48A52A4328C1CE630015B89B /* View */,
 				48C90FBC28C1CF7600D50635 /* Controller */,
 				48FFEE8228C1C76C005FA08B /* Assets.xcassets */,
@@ -159,6 +170,7 @@
 			files = (
 				48FFEE7E28C1C769005FA08B /* CalculatorViewController.swift in Sources */,
 				48FFEE7A28C1C769005FA08B /* AppDelegate.swift in Sources */,
+				48C90FC328C1F52200D50635 /* AppBrain.swift in Sources */,
 				48FFEE7C28C1C769005FA08B /* SceneDelegate.swift in Sources */,
 				48C90FBE28C1D07000D50635 /* ResultViewController.swift in Sources */,
 			);

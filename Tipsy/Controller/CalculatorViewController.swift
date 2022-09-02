@@ -9,6 +9,8 @@ import UIKit
 
 class CalculatorViewController: UIViewController {
 
+    var appBrain = AppBrain()
+    
     var tipSelected: Float = 0.0
     var percentTip: Float = 0.0
     var totalPerPerson: Float = 0.0
@@ -44,17 +46,14 @@ class CalculatorViewController: UIViewController {
     }
     
     @IBAction func calculateButtonPressed(_ sender: UIButton) {
-        percentTip = (tipSelected/100)
+        appBrain.calculatePercentTip(tipSelected)
+        percentTip = appBrain.getPercentTip() 
         userInput = (billTextField.text! as NSString).floatValue
         splitNumber = (splitNumberLabel.text! as NSString).floatValue
-        totalPerPerson = (userInput + (userInput * percentTip))/splitNumber
+        appBrain.calculateTotal(userInput, splitNumber)
+        totalPerPerson = appBrain.getTotal()
         
         performSegue(withIdentifier: "goToResult", sender: self)
-        
-        //print(totalPerPerson)
-        //print(billTextField.text!)
-        //print(splitNumberLabel.text!)
-        //print(percentTip)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
